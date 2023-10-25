@@ -14,8 +14,6 @@ const LeftPhotos = () => {
   return (
     <div className="about-photos">
       <div className="about-photo left1">1</div>
-      <div className="about-photo left2">2</div>
-      <div className="about-photo left3">3</div>
     </div>
   )
 }
@@ -35,8 +33,6 @@ const RightPhotos = () => {
   return (
     <div className="about-photos">
     <div className="about-photo right1">1</div>
-    <div className="about-photo right2">2</div>
-    <div className="about-photo right3">3</div>
   </div>
   )
 }

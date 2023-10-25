@@ -1,7 +1,7 @@
 .about {
     background: #aaa;
     display: flex;
-    height: 100vh;
+    height: 130vh;
     position: relative;
 }
 .about-photos {
@@ -12,8 +12,8 @@
 }
 
 .about-photo {
-    height: 250px;
-    width: 400px;
+    height: 400px;
+    width: 600px;
     border: 1px solid #555;
     border-radius: 1rem;
     background: #000;
@@ -25,47 +25,26 @@
 }
 
 .left1 {
-    left: 15%;
-    top: 66%;
-}
-.left2 {
-    top: 33%;
-    left: 30%;
+    left: 5%;
+    top: 5%;
 }
 
 .right1 {
-    right: 10%;
-    top: 66%;
+    right: 5%;
+    bottom: 5%;
 }
-.right2 {
-    top: 33%;
-    right: 20%;
-}
-.right3 {
-    right: 1rem;
-}
+
 .about-content {
     position: absolute;
-    width: 60%;
+    width: 80%;
     z-index: 2;
-    top: 5rem;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 4rem;
-    background: #aaa;
+    transform: translate(-50%, -50%);
+    background: rgba(170, 170, 170, 0.75);
+    padding: 0.5rem;
+    padding-bottom: 3rem;
     border-radius: 3rem;
-    background: linear-gradient(
-        to right,
-         transparent, 
-         rgba(170, 170, 170, 0.5) 2.5%,
-         rgba(170, 170, 170, 0.75) 5%,
-         rgba(170, 170, 170, 0.95) 10%,
-         rgba(170, 170, 170, 0.95) 90%,
-         rgba(170, 170, 170, 0.75) 95%,
-         rgba(170, 170, 170, 0.5) 97.5%,
-         transparent
-         );
-    border: 1px solid green;
 }
 .about-title {
     text-align: center;
