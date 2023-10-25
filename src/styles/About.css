@@ -1,0 +1,79 @@
+.about {
+    background: #aaa;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+.about-photos {
+    padding: 1rem;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.about-photo {
+    height: 250px;
+    width: 400px;
+    border: 1px solid #555;
+    border-radius: 1rem;
+    background: #000;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.left1 {
+    left: 15%;
+    top: 66%;
+}
+.left2 {
+    top: 33%;
+    left: 30%;
+}
+
+.right1 {
+    right: 10%;
+    top: 66%;
+}
+.right2 {
+    top: 33%;
+    right: 20%;
+}
+.right3 {
+    right: 1rem;
+}
+.about-content {
+    position: absolute;
+    width: 60%;
+    z-index: 2;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4rem;
+    background: #aaa;
+    border-radius: 3rem;
+    background: linear-gradient(
+        to right,
+         transparent, 
+         rgba(170, 170, 170, 0.5) 2.5%,
+         rgba(170, 170, 170, 0.75) 5%,
+         rgba(170, 170, 170, 0.95) 10%,
+         rgba(170, 170, 170, 0.95) 90%,
+         rgba(170, 170, 170, 0.75) 95%,
+         rgba(170, 170, 170, 0.5) 97.5%,
+         transparent
+         );
+    border: 1px solid green;
+}
+.about-title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+.about-text {
+    padding-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}

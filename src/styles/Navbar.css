@@ -6,7 +6,9 @@
   color: white;
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100vw;
+  background: #222;
 }
 
 .navList {
