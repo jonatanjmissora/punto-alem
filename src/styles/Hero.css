@@ -1,0 +1,43 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  margin-bottom: 15rem;
+}
+
+.hero-text {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  line-height: 1.2;
+}
+
+.hero-title {
+  font-size: 6rem;
+  color: rgb(197, 188, 112);
+  font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
+  font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: 0.5rem;
+}
+
+.hero-img-container {
+  padding-top: 6.5rem;
+}
+
+.hero-img {
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
+  filter: grayscale(0.5) blur(2px) brightness(0.25);
+  -webkit-mask: linear-gradient(transparent 10%, black, transparent 100%);
+  mask: linear-gradient(transparent 10%, black, transparent 100%);
+}
