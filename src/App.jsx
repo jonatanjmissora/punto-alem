@@ -5,19 +5,15 @@ import { Constact } from './components/Constact'
 import { Footer } from './components/Footer'
 import { Gallery } from './components/Gallery'
 import { Services } from './components/Services'
+import { Description } from './components/Description'
 
 function App () {
   return (
     <div className='App'>
       <Navbar/>
       <Hero />
+      <Description />
       <About />
-      {/*
-      <Services />
-      <Gallery />
-      <Constact />
-      <Footer/>
-       */}
     </div>
   )
 }
