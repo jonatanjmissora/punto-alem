@@ -1,11 +1,12 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Constact } from './components/Constact'
-import { Footer } from './components/Footer'
-import { Gallery } from './components/Gallery'
-import { Services } from './components/Services'
 import { Description } from './components/Description'
+import { Nosotros } from './components/Nosotros'
+import { Sociales } from './components/Sociales'
+import { Corporativos } from './components/Corporativos'
+import { Exclusivos } from './components/Exclusivos'
+import { Catering } from './components/Catering'
+import { Contacto } from './components/Contacto'
 
 function App () {
   return (
@@ -13,7 +14,12 @@ function App () {
       <Navbar/>
       <Hero />
       <Description />
-      <About />
+      <Nosotros />
+      <Sociales />
+      <Corporativos />
+      <Exclusivos />
+      <Catering />
+      <Contacto />
     </div>
   )
 }
