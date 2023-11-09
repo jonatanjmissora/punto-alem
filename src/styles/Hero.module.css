@@ -15,28 +15,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+}
+
+.logo {
+  width: 45rem;
 }
 
 .title {
-  font-size: 6rem;
+  /* font-size: 6rem;
   font-weight: 300;
   background: linear-gradient(165deg, rgb(245, 236, 170), rgb(100, 85, 9));
   -webkit-background-clip: text;
-  color: transparent
+  background-clip: text;
+  color: transparent; */
+  display: none;
 }
 
 .sub_title {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   margin-bottom: 2rem;
   color: #575757;
-  font-weight: 400;
+  font-weight: 400; */
+  display: none;
 }
 
 
 .footer {
   font-weight: 400;
-  color: #979797;
+  color: var(--blue);
+  opacity: 0.5;
 }
 
 .footer span {

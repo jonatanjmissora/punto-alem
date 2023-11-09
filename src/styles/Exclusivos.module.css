@@ -22,8 +22,8 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(226, 195, 121, 0.8);
-  backdrop-filter: blur(5px);
+  background: var(--gold);
+  opacity: 0.85;
 }
 
 .text_container h3 {

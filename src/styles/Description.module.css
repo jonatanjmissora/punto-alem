@@ -15,14 +15,12 @@
   width: 26dvw;
 }
 
-.description h3 {
+.description .title {
   margin-bottom: 1.5rem;
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.75rem;
-  background: linear-gradient(165deg, rgb(193, 185, 129), rgb(100, 85, 9));
-  -webkit-background-clip: text;
-  color: transparent
+  color: var(--gold);
 }
 
 .description p {
@@ -30,7 +28,7 @@
   line-height: 1.75;
   font-weight: 300;
   font-size: 1.3rem;
-
+  color: var(--blue);
 }
 
 .image {

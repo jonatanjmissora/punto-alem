@@ -7,10 +7,11 @@ import { Corporativos } from './components/Corporativos'
 import { Exclusivos } from './components/Exclusivos'
 import { Catering } from './components/Catering'
 import { Contacto } from './components/Contacto'
+import { Footer } from './components/Footer'
 
 function App () {
   return (
-    <div className='App'>
+    <main className='App'>
       <Navbar/>
       <Hero />
       <Description />
@@ -20,13 +21,8 @@ function App () {
       <Exclusivos />
       <Catering />
       <Contacto />
-    </div>
-  )
-}
-
-const Space = () => {
-  return (
-    <div className="space"></div>
+      <Footer />
+    </main>
   )
 }
 

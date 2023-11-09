@@ -8,6 +8,9 @@
   --white: #e1e1e1;
   --black: #313131;
   --navbar-desktop-height: 5rem;
+  --gold: rgb(213, 185, 131);
+  --light-gold: rgb(242, 232, 211);
+  --blue: rgb(11, 43, 79);
 }
 
 *,
@@ -26,6 +29,7 @@
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--navbar-desktop-height) - 1px);
 }
 
 body {
@@ -97,6 +101,10 @@ textarea {
   padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid gray;
+}
+
+a {
+  border: none;
 }
 
 button,
