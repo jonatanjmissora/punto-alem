@@ -1,10 +1,12 @@
 import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Exclusivos.module.css'
+import { FaltaFoto } from './FaltaFoto'
 
 export const Exclusivos = () => {
   return (
     <article className={styles.exclusivos}>
-      <img className={styles.image} src={heroImg} alt="" />
+      {/* <img className={styles.image} src={heroImg} alt="" /> */}
+      <FaltaFoto category={'foto 6'} width={'100%'} height={'80vh'} />
       <div className={styles.text_container}>
         <h3>Exclusivos</h3>
         <p>Punto Alem se distingue por su hermoso parquizado en un lugar mágico dentro de la ciudad. Los eventos diurnos y nocturnos no tendrán comparación.</p>

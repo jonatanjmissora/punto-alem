@@ -1,6 +1,7 @@
 import heroImg from '../assets/heroImg.jpg'
 import { FacebookSvg, InstagramSvg, MailSvg, MapPinSvg, PhoneSvg } from '../assets/icons/Svg'
 import styles from '../styles/Contacto.module.css'
+import { FaltaFoto } from './FaltaFoto'
 
 export const Contacto = () => {
   return (
@@ -8,7 +9,8 @@ export const Contacto = () => {
 
       <article className={styles.contact}>
 
-      <img className={styles.image} src={heroImg} alt="" />
+      {/* <img className={styles.image} src={heroImg} alt="" /> */}
+      <FaltaFoto category={'foto 11'} width={'100%'} height={'100vh'} />
       <form className={styles.form}>
         <h2 className={styles.form_title}>Tu evento comienza aquí</h2>
         <div className={styles.row}>
@@ -89,7 +91,8 @@ export const Contacto = () => {
       </div>
       </article>
 
-      <img className={styles.image2} src={heroImg} alt="" />
+      <FaltaFoto category={'foto 12'} width={'100%'} height={'60vh'} />
+      {/* <img className={styles.image2} src={heroImg} alt="" /> */}
 
     </section>
   )

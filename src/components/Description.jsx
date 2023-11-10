@@ -1,5 +1,6 @@
 import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Description.module.css'
+import { FaltaFoto } from './FaltaFoto'
 
 export const Description = () => {
   return (
@@ -23,9 +24,10 @@ export const Description = () => {
         </div>
 
       </article>
-        <div className={styles.parallax}>
+      <FaltaFoto category={'foto 2'} width={'100%'} height={'55vh'} />
+        {/* <div className={styles.parallax}>
           <img className={styles.image} src={heroImg} alt="" />
-        </div>
+        </div> */}
     </section>
   )
 }

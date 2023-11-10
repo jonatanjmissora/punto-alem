@@ -1,10 +1,10 @@
-import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Sociales.module.css'
+import { Carrousel } from './Carrousel'
 
 export const Sociales = () => {
   return (
     <section className={styles.sociales} id="sociales">
-      <img className={styles.image} src={heroImg} alt="" />
+      <Carrousel category={'foto4'} width={'100%'} height={'80vh'}/>
       <div className={styles.text_container}>
         <h3>Sociales</h3>
         <p>Punto Alem es el lugar para vivir tu evento soñado. Podrás disfrutar de las más variadas celebraciones: desde casamientos, fiestas de quince hasta Bar Mitzvah, aniversarios, cumpleaños. Cualquier evento se convierte en un momento lleno de magia.</p>

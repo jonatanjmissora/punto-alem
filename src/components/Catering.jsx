@@ -1,5 +1,7 @@
 import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Catering.module.css'
+import { Carrousel } from './Carrousel'
+import { FaltaFoto } from './FaltaFoto'
 
 export const Catering = () => {
   return (
@@ -13,21 +15,22 @@ export const Catering = () => {
             <p>Además, te ofrecemos un servicio de bartender, que te preparará los mejores y mas ricos tragos. Acompañado siempre por nuestro servicio de mozos, que atenderá de la mejor manera y profesionalismo.</p>
           </div>
         </div>
-        <img className={styles.image} src={heroImg} alt="" />
+        <Carrousel category={'foto7'} width={'100%'} height={'70vh'}/>
       </article>
       <article>
         <div className={styles.row}>
-          <img className={styles.image_row} src={heroImg} alt="" />
+        <Carrousel category={'foto8'} width={'60vw'} height={'50vh'}/>
           <h2 className={styles.frase}>DISTINCIÓN</h2>
         </div>
 
         <div className={styles.row}>
           <h2 className={styles.frase}>ESTILO</h2>
-          <img className={styles.image_row} src={heroImg} alt="" />
+          <FaltaFoto category={'foto 9'} width={'60vw'} height={'50vh'} />
+          {/* <img className={styles.image_row} src={heroImg} alt="" /> */}
         </div>
 
         <div className={styles.row}>
-          <img className={styles.image_row} src={heroImg} alt="" />
+          <Carrousel category={'foto10'} width={'60vw'} height={'50vh'}/>
           <h2 className={styles.frase}>ELAVORACIÓN</h2>
         </div>
       </article>

@@ -1,11 +1,11 @@
-import heroImg from '../assets/heroImg.jpg'
 import PuntoAlemLogo from '../assets/Punto_Alem_Logo.png'
 import styles from '../styles/Hero.module.css'
+import { Carrousel } from './Carrousel'
 
 export const Hero = () => {
   return (
     <section className={styles.hero} id="inicio">
-        <img className={styles.image} src={heroImg} alt="imagen del hero" />
+      <Carrousel category={'foto1'} width={'100%'} height={'55vh'}/>
       <div className={styles.text_container}>
         <img className={styles.logo} src={PuntoAlemLogo} alt="" />
         <h1 className={styles.title}>Punto Alem</h1>

@@ -1,5 +1,6 @@
 import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Nosotros.module.css'
+import { FaltaFoto } from './FaltaFoto'
 
 export const Nosotros = () => {
   return (
@@ -11,7 +12,8 @@ export const Nosotros = () => {
           <p>Ofrecemos un servicio integral, de calidad y personalizado, respaldado por una organización sólida y comprometida que garantiza seguridad y tranquilidad para que nuestros clientes puedan disfrutar de su evento sin preocuparse por nada.</p>
           <p>Nos caracterizamos por la búsqueda constante de propuestas innovadoras, poniendo a disposición nuestra creatividad, responsabilidad y experiencia.</p>
         </div>
-        <img className={styles.image} src={heroImg} alt="" />
+        <FaltaFoto category={'foto 3'} width={'40vw'} height={'35vw'} />
+        {/* <img className={styles.image} src={heroImg} alt="" /> */}
       </div>
     </section>
   )
