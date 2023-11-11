@@ -1,4 +1,3 @@
-import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Exclusivos.module.css'
 import { FaltaFoto } from './FaltaFoto'
 

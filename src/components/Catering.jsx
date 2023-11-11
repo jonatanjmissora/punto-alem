@@ -1,4 +1,3 @@
-import heroImg from '../assets/heroImg.jpg'
 import styles from '../styles/Catering.module.css'
 import { Carrousel } from './Carrousel'
 import { FaltaFoto } from './FaltaFoto'

@@ -1,4 +1,3 @@
-import heroImg from '../assets/heroImg.jpg'
 import { FacebookSvg, InstagramSvg, MailSvg, MapPinSvg, PhoneSvg } from '../assets/icons/Svg'
 import styles from '../styles/Contacto.module.css'
 import { FaltaFoto } from './FaltaFoto'
