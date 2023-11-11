@@ -5,7 +5,7 @@ export const Corporativos = () => {
   return (
     <section className={styles.corporativos} id="corporativos">
       <div className={styles.wrapper}>
-        <Carrousel category={'foto5'} width={'40vw'} height={'30vw'}/>
+        <Carrousel category={'foto5'} width={'40vw'} height={'30vw'} index={2}/>
         <div className={styles.text_container}>
           <h3 className={styles.title}>Corporativos</h3>
           <p>Si quieres organizar un evento corporativo exitoso, nuestro salón te ofrece el tamaño ideal, dónde podrás realizar fiestas de fin de año, jornadas de trabajo, congresos o exhibiciones de producto, recepciones, etc.</p>

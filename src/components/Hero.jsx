@@ -5,7 +5,7 @@ import { Carrousel } from './Carrousel'
 export const Hero = () => {
   return (
     <section className={styles.hero} id="inicio">
-      <Carrousel category={'foto1'} width={'100%'} height={'55vh'}/>
+      <Carrousel category={'foto1'} width={'100%'} height={'55vh'} index={2}/>
       <div className={styles.text_container}>
         <img className={styles.logo} src={PuntoAlemLogo} alt="" />
         <h1 className={styles.title}>Punto Alem</h1>

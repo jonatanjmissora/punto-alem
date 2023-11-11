@@ -1,5 +1,5 @@
 import styles from '../styles/Description.module.css'
-import { FaltaFoto } from './FaltaFoto'
+import { Carrousel } from './Carrousel'
 
 export const Description = () => {
   return (
@@ -23,7 +23,7 @@ export const Description = () => {
         </div>
 
       </article>
-      <FaltaFoto category={'foto 2'} width={'100%'} height={'55vh'} />
+      <Carrousel category={'foto1'} width={'100%'} height={'55vh'} index={0}/>
         {/* <div className={styles.parallax}>
           <img className={styles.image} src={heroImg} alt="" />
         </div> */}

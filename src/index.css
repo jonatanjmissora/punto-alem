@@ -4,7 +4,7 @@
 
 :root {
   /* font-size: calc(0.5vw + 1vh + 0.5vmin); */
-  --body-bg: rgb(237, 237, 237);
+  --body-bg: rgb(240, 240, 255);
   --white: #e1e1e1;
   --black: #313131;
   --navbar-desktop-height: 5rem;

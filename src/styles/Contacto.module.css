@@ -41,12 +41,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
-  gap: 7rem;
+  gap: 4rem;
   color: var(--blue);
 }
 
 .form .row input {
-  width: 12rem;
+  width: 15rem;
   height: 2rem;
   color: var(--blue);
 }
@@ -68,7 +68,7 @@
 }
 
 .form .row_last textarea {
-  width: 12rem;
+  width: 15rem;
   resize: none;
   color: var(--blue);
 }
@@ -76,7 +76,7 @@
 .form .button_container {
   width: 100%;
   text-align: right;
-  padding-right: 3rem;
+  padding-right: 4.5rem;
 }
 
 .form button {
@@ -90,8 +90,9 @@
   display: flex;
   justify-content: center;
   gap: 10vw;
-  margin: 10rem 0;
+  padding: 10rem 0;
   color: var(--blue);
+  background: white;
 }
 
 .data_item {

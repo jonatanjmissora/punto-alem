@@ -15,10 +15,9 @@ import foto54 from '../assets/foto_5_4.jpg'
 import foto71 from '../assets/foto_7_1.jpg'
 import foto72 from '../assets/foto_7_2.jpg'
 import foto73 from '../assets/foto_7_3.jpg'
-
-import foto81 from '../assets/foto_8_1.jpg'
-import foto82 from '../assets/foto_8_2.jpg'
-import foto83 from '../assets/foto_8_3.jpg'
+import foto74 from '../assets/foto_7_4.jpg'
+import foto75 from '../assets/foto_7_5.jpg'
+import foto76 from '../assets/foto_7_6.jpg'
 
 import foto101 from '../assets/foto_10_1.jpg'
 import foto102 from '../assets/foto_10_2.jpg'
@@ -27,28 +26,21 @@ import styles from '../styles/Carrousel.module.css'
 import { ChevronRightSvg } from '../assets/icons/Svg'
 import { useState } from 'react'
 
-export const Carrousel = ({ category, width, height }) => {
-  const [index, setIndex] = useState(0)
+export const Carrousel = ({ category, width, height, index }) => {
+  const [actualIndex, setActualIndex] = useState(index)
 
   const images = {
     foto1: [foto11, foto14, foto15, foto16, foto17],
-    foto2: [],
-    foto3: [],
     foto4: [foto41, foto42],
     foto5: [foto51, foto52, foto53, foto54],
-    foto6: [],
-    foto7: [foto71, foto72, foto73],
-    foto8: [foto81, foto82, foto83],
-    foto9: [],
-    foto10: [foto102, foto101],
-    foto11: [],
-    foto12: []
+    foto7: [foto71, foto72, foto73, foto74, foto75, foto76],
+    foto10: [foto101, foto102]
   }
 
   const handleClick = () => {
     const maxIndex = images[category].length - 1
-    const nextIndex = index + 1 > maxIndex ? 0 : index + 1
-    setIndex(nextIndex)
+    const nextIndex = actualIndex + 1 > maxIndex ? 0 : actualIndex + 1
+    setActualIndex(nextIndex)
   }
 
   const imageContainerStyles = {
@@ -59,7 +51,7 @@ export const Carrousel = ({ category, width, height }) => {
 
   return (
     <div style={imageContainerStyles}>
-      <img className={styles.image} src={images[category][index]} alt="imagen del hero" />
+      <img className={styles.image} src={images[category][actualIndex]} alt="imagen del hero" />
       <span className={styles.chevron} onClick={handleClick}><ChevronRightSvg /></span>
     </div>
   )

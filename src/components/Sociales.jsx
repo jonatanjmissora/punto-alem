@@ -4,7 +4,7 @@ import { Carrousel } from './Carrousel'
 export const Sociales = () => {
   return (
     <section className={styles.sociales} id="sociales">
-      <Carrousel category={'foto4'} width={'100%'} height={'80vh'}/>
+      <Carrousel category={'foto4'} width={'100%'} height={'80vh'} index={0}/>
       <div className={styles.text_container}>
         <h3>Sociales</h3>
         <p>Punto Alem es el lugar para vivir tu evento soñado. Podrás disfrutar de las más variadas celebraciones: desde casamientos, fiestas de quince hasta Bar Mitzvah, aniversarios, cumpleaños. Cualquier evento se convierte en un momento lleno de magia.</p>
