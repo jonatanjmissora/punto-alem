@@ -5,7 +5,7 @@ export const Exclusivos = () => {
   return (
     <article className={styles.exclusivos}>
       {/* <img className={styles.image} src={heroImg} alt="" /> */}
-      <Carrousel category={'foto5'} width={'100%'} height={'80vh'} index={0}/>
+      <Carrousel category={'foto6'} width={'100%'} height={'80vh'} index={0}/>
       <div className={styles.text_container}>
         <h3>Exclusivos</h3>
         <p>Punto Alem se distingue por su hermoso parquizado en un lugar mágico dentro de la ciudad. Los eventos diurnos y nocturnos no tendrán comparación.</p>

@@ -1,9 +1,6 @@
 .contact {
-  height: 100dvh;
   position: relative;
-  display: grid;
-  place-items: center;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .image {
@@ -14,7 +11,10 @@
 .form {
   position: absolute;
   z-index: 0;
-  padding: 5rem 8rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
 }
 
 .form::before {
@@ -140,4 +140,41 @@
   height: 60dvh;
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .form {
+    width: 90vw;
+    padding: 2rem 1rem;
+  }
+
+  .form .row {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .form .row label {
+    width: 200px;
+  }
+
+  .form .row input,
+  .form .row_last textarea {
+    width: 40vw;
+  }
+
+  .data {
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 15vw;
+  }
+
+  .data_item {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
 }

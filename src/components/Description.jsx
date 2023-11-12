@@ -23,7 +23,7 @@ export const Description = () => {
         </div>
 
       </article>
-      <Carrousel category={'foto1'} width={'100%'} height={'55vh'} index={0}/>
+      <Carrousel category={'foto2'} width={'100%'} height={'55vh'} index={0}/>
         {/* <div className={styles.parallax}>
           <img className={styles.image} src={heroImg} alt="" />
         </div> */}

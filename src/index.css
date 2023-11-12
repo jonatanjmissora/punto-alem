@@ -3,14 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 
 :root {
-  /* font-size: calc(0.5vw + 1vh + 0.5vmin); */
-  --body-bg: rgb(240, 240, 255);
+  --body-bg: rgb(255, 255, 255);
   --white: #e1e1e1;
   --black: #313131;
   --navbar-desktop-height: 5rem;
-  --gold: rgb(213, 185, 131);
+  --gold: #CCA965;
   --light-gold: rgb(242, 232, 211);
-  --blue: rgb(11, 43, 79);
+  --blue: #192D4D;
 }
 
 *,
@@ -27,14 +26,14 @@
 }
 
 html {
+  /* font-size: calc(0.5vw + 1vh + 0.5vmin); */
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
-  scroll-padding-top: calc(var(--navbar-desktop-height) - 1px);
+  scroll-padding-top: var(--navbar-desktop-height);
 }
 
 body {
   min-height: 100vh;
-  width: 100%;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
@@ -43,10 +42,6 @@ body {
   background: var(--body-bg);
   color: var(--black);
   position: relative;
-}
-
-#root {
-  width: 100%;
 }
 
 p,
@@ -144,3 +139,17 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+@media (max-width: 1400px) {
+  :root {
+    --navbar-desktop-height: 4rem;
+    font-size: 0.7rem;
+  }
+}
+
+
+/* @media (max-width: 760px) {
+  :root {
+    --navbar-desktop-height: 3.5rem;
+  }
+} */

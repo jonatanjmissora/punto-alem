@@ -1,5 +1,7 @@
 .section {
   background: white;
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, rgb(250, 250, 255), white);
 }
 
 .text_container {
@@ -35,4 +37,28 @@
   height: 55vh;
   object-fit: cover;
   width: 100%;
+}
+
+@media (max-width: 760px) {
+  .text_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 0;
+    width: 100vw;
+  }
+
+  .description {
+    width: 90%;
+    padding: 2rem 0;
+  }
+
+  .description .title {
+    font-size: 1.5rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
 }

@@ -31,10 +31,17 @@ export const Carrousel = ({ category, width, height, index }) => {
 
   const images = {
     foto1: [foto11, foto14, foto15, foto16, foto17],
+    foto2: [foto11, foto14, foto15, foto16, foto17],
+    foto3: [foto11, foto14, foto15, foto16, foto17],
     foto4: [foto41, foto42],
     foto5: [foto51, foto52, foto53, foto54],
+    foto6: [foto51, foto52, foto53, foto54],
     foto7: [foto71, foto72, foto73, foto74, foto75, foto76],
-    foto10: [foto101, foto102]
+    foto8: [foto71, foto72, foto73, foto74, foto75, foto76],
+    foto9: [foto71, foto72, foto73, foto74, foto75, foto76],
+    foto10: [foto101, foto102],
+    foto11: [foto51, foto52, foto53, foto54],
+    foto12: [foto11, foto14, foto15, foto16, foto17]
   }
 
   const handleClick = () => {
@@ -49,9 +56,24 @@ export const Carrousel = ({ category, width, height, index }) => {
     position: 'relative'
   }
 
+  const specialFotos = ['foto4', 'foto6', 'foto11']
+  const shortFotos = ['foto8', 'foto9', 'foto10']
+
+  const setHeight = () => {
+    if (specialFotos.includes(category)) return '120vh'
+    if (shortFotos.includes(category)) return '35vh'
+    return '55vh'
+  }
+
+  const imageContainerFullStyles = {
+    width: '100%',
+    height: setHeight(),
+    position: 'relative'
+  }
+
   return (
-    <div style={imageContainerStyles}>
-      <img className={styles.image} src={images[category][actualIndex]} alt="imagen del hero" />
+    <div style={window.innerWidth > 720 ? imageContainerStyles : imageContainerFullStyles} className={styles.image_container}>
+      <img className={styles.image} src={images[category][actualIndex]} alt="imagen del hero" loading="lazy"/>
       <span className={styles.chevron} onClick={handleClick}><ChevronRightSvg /></span>
     </div>
   )

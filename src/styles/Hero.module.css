@@ -1,6 +1,7 @@
 .hero {
   margin-top: var(--navbar-desktop-height);
-  height: calc(100dvh - var(--navbar-desktop-height));
+  /* height: calc(100dvh - var(--navbar-desktop-height)); */
+  background: rgb(250, 250, 255);
 }
 
 .image {
@@ -15,10 +16,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .logo {
-  width: 45rem;
+  width: 40vw;
 }
 
 .title {
@@ -43,10 +45,23 @@
 .footer {
   font-weight: 400;
   color: var(--blue);
-  opacity: 0.5;
+
 }
 
 .footer span {
   margin: 0 1rem;
   font-size: 1.25rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 760px) {
+
+  .logo {
+    width: 80vw;
+  }
+
+  .footer span {
+    font-size: 0.75rem;
+    margin: 0.5rem;
+  }
 }

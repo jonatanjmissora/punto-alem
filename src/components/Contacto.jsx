@@ -9,7 +9,7 @@ export const Contacto = () => {
       <article className={styles.contact}>
 
       {/* <img className={styles.image} src={heroImg} alt="" /> */}
-      <Carrousel category={'foto5'} width={'100%'} height={'100vh'} index={3}/>
+      <Carrousel category={'foto11'} width={'100%'} height={'100vh'} index={3}/>
       <form className={styles.form}>
         <h2 className={styles.form_title}>Tu evento comienza aquí</h2>
         <div className={styles.row}>
@@ -90,7 +90,7 @@ export const Contacto = () => {
       </div>
       </article>
 
-      <Carrousel category={'foto1'} width={'100%'} height={'60vh'} index={3}/>
+      <Carrousel category={'foto12'} width={'100%'} height={'60vh'} index={3}/>
       {/* <img className={styles.image2} src={heroImg} alt="" /> */}
 
     </section>

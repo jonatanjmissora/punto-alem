@@ -18,3 +18,14 @@
   height: 3rem;
   color: var(--blue)
 }
+
+@media (max-width: 760px) {
+  .chevron {
+    right: 1rem;
+  }
+
+  .chevron svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}

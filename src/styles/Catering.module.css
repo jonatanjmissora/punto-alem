@@ -14,7 +14,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  max-width: 31dvw;
+  width: 31dvw;
   margin: 0 auto;
 }
 
@@ -48,6 +48,7 @@
   display: flex;
   height: 50dvh;
   overflow: hidden;
+  position: relative
 }
 
 .image_row {
@@ -62,4 +63,44 @@
   font-weight: 200;
   color: var(--gold);
   text-align: center;
+  z-index: 2;
+}
+
+@media (max-width: 760px) {
+  .catering {
+    flex-direction: column;
+  }
+
+  .text_container {
+    width: 90%;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .catering .title {
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+
+  .catering p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .row {
+    margin: 0.5rem 0;
+    height: 35vh;
+  }
+
+  .row .frase {
+    position: absolute;
+    bottom: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+
+
 }

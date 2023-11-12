@@ -13,23 +13,24 @@ export const Catering = () => {
             <p>Además, te ofrecemos un servicio de bartender, que te preparará los mejores y mas ricos tragos. Acompañado siempre por nuestro servicio de mozos, que atenderá de la mejor manera y profesionalismo.</p>
           </div>
         </div>
+
         <Carrousel category={'foto7'} width={'100%'} height={'70vh'} index={0}/>
       </article>
       <article>
         <div className={styles.row}>
-        <Carrousel category={'foto7'} width={'60vw'} height={'50vh'} index={2}/>
+        <Carrousel category={'foto8'} width={'60vw'} height={'50vh'} index={2}/>
           <h2 className={styles.frase}>DISTINCIÓN</h2>
         </div>
 
-        <div className={styles.row}>
+         <div className={styles.row}>
           <h2 className={styles.frase}>ESTILO</h2>
-          <Carrousel category={'foto7'} width={'60vw'} height={'50vh'} index={3}/>
+          <Carrousel category={'foto9'} width={'60vw'} height={'50vh'} index={3}/>
           {/* <img className={styles.image_row} src={heroImg} alt="" /> */}
         </div>
 
         <div className={styles.row}>
           <Carrousel category={'foto10'} width={'60vw'} height={'50vh'} index={1}/>
-          <h2 className={styles.frase}>ELAVORACIÓN</h2>
+          <h2 className={styles.frase}>ELABORACIÓN</h2>
         </div>
       </article>
     </section>
