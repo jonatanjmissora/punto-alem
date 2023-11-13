@@ -27,6 +27,7 @@ import { ChevronRightSvg } from '../assets/icons/Svg'
 import { useState } from 'react'
 
 export const Carrousel = ({ category, width, height, index }) => {
+  console.log("render carrousell")
   const [actualIndex, setActualIndex] = useState(index)
 
   const images = {
@@ -60,7 +61,7 @@ export const Carrousel = ({ category, width, height, index }) => {
   const shortFotos = ['foto8', 'foto9', 'foto10']
 
   const setHeight = () => {
-    if (specialFotos.includes(category)) return '120vh'
+    if (specialFotos.includes(category)) return '70vh'
     if (shortFotos.includes(category)) return '35vh'
     return '55vh'
   }

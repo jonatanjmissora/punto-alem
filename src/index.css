@@ -142,11 +142,9 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 1400px) {
   :root {
-    --navbar-desktop-height: 4rem;
     font-size: 0.7rem;
   }
 }
-
 
 /* @media (max-width: 760px) {
   :root {
